@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar-default navbar-static-side shadow-sm">
+            <ul class="nav-aside">
+                <li><a href="#" data-toggle="tooltip" data-placement="left" title="Inicio"><img src="img/hogar.png"
+                            width="35" alt=""></a></li>
+                <li><a href="celula-inicial.html" data-toggle="tooltip" data-placement="left" title="Iniciar Célula"><img
+                            src="img/conversacion.png" width="35" alt=""></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="left" title="Control de Células"><img
+                            src="img/avatar.png" width="35" alt=""></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="left" title="Configuraciones"><img
+                            src="img/configuraciones.png" width="35" alt=""></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="left" title="Nueva persona"><img
+                            src="img/usuarios.png" width="35" alt=""></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="left" title="Salir"><img src="img/salir.svg"
+                            width="35" alt=""></a></li>
+            </ul>
+        </nav>
+
+        <main class="page-wrapper mt-0 container__vh100 d-flex justify-content-center align-items-center">
+            <div class="container-fluid">
+                <header class="fixed-top shadow"><span class="font-weight-bold">Bienvenido</span> &nbsp;Genetics
+                </header>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-12">
+                        <div class="card text-center">
+                            <div class="d-flex justify-content-center">
+                                <img src="img/conversacion.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tu ecosistema está vacío.</h5>
+                                <p>Comienza agregando tu primer célula.</p>
+                                <a href="celula-inicial.html" class="btn btn-primary rounded-pill">Agregar célula</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  <div class="col">
+                        <div class=" home col-auto p-5">
+                            <img src="img/conversacion.png">
+                            <p>Tu ecosistema está vacío. <br> Comienza agregando tu primer célula.</p>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-login">ENTRAR</button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div id="cont-home" class="container">
+                        <div class=" row container__vh100 justify-contenet-center align-items-center">
+                            <div class=" home col-auto p-5">
+                                <img src="img/conversacion.png">
+                                <p>Tu ecosistema está vacío. <br> Comienza agregando tu primer célula.</p>
+                                <div class="mb-3">
+                                    <button type="submit" class="btn btn-login">ENTRAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <!-- Tootltips -->
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>

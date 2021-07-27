@@ -18,6 +18,8 @@ body,
           box-sizing: border-box;
   /* Utilidades */
   /* Header */
+  /* Login */
+  /* Termina Login */
   /* Wrapper */
   /* Dashboard contenido interno */ }
   body main,
@@ -43,6 +45,9 @@ body,
     border-radius: 20px;
     opacity: 1;
     padding: 20px; }
+  body .card-img-top,
+  * .card-img-top {
+    width: 40%; }
   body .btn-warning,
   * .btn-warning {
     background: #FDCF11;
@@ -61,6 +66,24 @@ body,
     * .btn-warning:active {
       background: #f5c400 !important;
       color: #111 !important; }
+  body .btn-primary,
+  * .btn-primary {
+    background: #310CF3 !important;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 35px; }
+    body .btn-primary:hover,
+    * .btn-primary:hover {
+      background: #664DE9 !important;
+      -webkit-box-shadow: 3px 3px 12px -2px #00000036;
+              box-shadow: 3px 3px 12px -2px #00000036; }
+    body .btn-primary:visited,
+    * .btn-primary:visited {
+      background: #664DE9; }
+    body .btn-primary:active,
+    * .btn-primary:active {
+      background: #664DE9 !important;
+      color: #fff !important; }
   body .btn-primary,
   * .btn-primary {
     background: var(--color-azul-f);
@@ -152,6 +175,58 @@ body,
     * header span {
       margin-left: 10rem;
       font-size: 22px; }
+  body .card--login,
+  * .card--login {
+    position: relative; }
+    body .card--login-pleca,
+    * .card--login-pleca {
+      position: absolute;
+      top: 20px;
+      left: 0px; }
+  body .input-group input::-webkit-input-placeholder,
+  * .input-group input::-webkit-input-placeholder {
+    color: gray;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-weight: 500; }
+  body .input-group input:-ms-input-placeholder,
+  * .input-group input:-ms-input-placeholder {
+    color: gray;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-weight: 500; }
+  body .input-group input::-ms-input-placeholder,
+  * .input-group input::-ms-input-placeholder {
+    color: gray;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-weight: 500; }
+  body .input-group input::placeholder,
+  * .input-group input::placeholder {
+    color: gray;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-weight: 500; }
+  body #inferior,
+  * #inferior {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 50px; }
+  body #inferior img,
+  * #inferior img {
+    width: 100%; }
+  body .container__vh100,
+  * .container__vh100 {
+    height: 100vh; }
   body .wrapper,
   * .wrapper {
     width: 100%;

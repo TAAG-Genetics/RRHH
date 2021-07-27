@@ -57,6 +57,11 @@ body,
         padding: 20px;
     }
 
+    .card-img-top{
+        width: 40%;
+        
+    }
+
     .btn-warning {
         background: $color-yellow;
         border: none;
@@ -75,6 +80,27 @@ body,
         &:active {
             background: #f5c400 !important;
             color: #111 !important;
+        }
+    }
+
+    .btn-primary {
+        background: $color-blue!important;
+        border: none;
+        border-radius: 15px;
+        padding: 5px 35px;
+
+        &:hover {
+            background: #664DE9!important;
+            box-shadow: 3px 3px 12px -2px #00000036;
+        }
+
+        &:visited {
+            background: #664DE9;
+        }
+
+        &:active {
+            background: #664DE9 !important;
+            color: #fff !important;
         }
     }
 
@@ -109,10 +135,12 @@ body,
     .modal-content {
         border-radius: 1.3rem;
         overflow: hidden;
-        .modal-header{
-            background: black!important;
+
+        .modal-header {
+            background: black !important;
         }
-        .fa-check-circle__check{
+
+        .fa-check-circle__check {
             font-size: 50px;
             color: #00C100;
         }
@@ -145,18 +173,54 @@ body,
 
     /* Header */
     header {
-        background-color:white;
+        background-color: white;
         height: 50px;
         width: 100%;
         display: flex;
         align-items: center;
-        z-index: 0!important;
-        span{
+        z-index: 0 !important;
+
+        span {
             margin-left: 10rem;
             font-size: 22px;
         }
-       
+
     }
+
+    /* Login */
+    .card--login{
+        position: relative;
+        &-pleca{
+            position: absolute;
+            top: 20px;
+            left: 0px;
+        }
+    }
+      
+      .input-group input::placeholder{
+        color: gray;
+        font-size: 10px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        font-weight: 500;
+      }
+      
+      #inferior{
+        display: flex;
+        position:absolute; 
+        left:0px; 
+        right:0px; 
+        bottom:0px; 
+        height:50px; 
+         }
+      #inferior img{
+        width: 100%;
+      }
+
+      .container__vh100{
+        height: 100vh;
+      }
+    /* Termina Login */
 
 
     /* Wrapper */
@@ -201,13 +265,14 @@ body,
             }
         }
     }
-    
 
-    .form-container{
+
+    .form-container {
         width: 100%;
         border-radius: 15px;
         overflow: hidden;
-        &__tile{
+
+        &__tile {
             background: black;
             color: white;
             height: 50px;
