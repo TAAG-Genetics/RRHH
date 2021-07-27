@@ -1,0 +1,264 @@
+/* Variables */
+/* Variables */
+$color-yellow:#FDCF11;
+$color-blue:#310CF3;
+$color-purple: #653490;
+$color-grey:#808080;
+$color-grey-light:#D6D5D5;
+$color-white-light:#F3F3F3;
+
+/* Tipografias */
+@font-face {
+    font-family: avenir-book, sans-serif;
+    src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+    font-family: avenir-roman, sans-serif;
+    src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+
+@font-face {
+    font-family: avenir-black, sans-serif;
+    src: url(../fonts/AvenirLTStd-Black.otf);
+}
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    main {
+        display: block;
+        overflow: hidden;
+    }
+
+
+    /* Utilidades */
+    .color-azul-f {
+        color: var(--color-azul-f);
+    }
+
+    .color-azul {
+        color: var(--color-azul);
+    }
+
+    .color-amarillo {
+        color: var(--color-amarillo);
+    }
+
+    .card {
+        background: var(--color-gris);
+        box-shadow: 0px 3px 6px #00000029;
+        box-shadow: 3px 3px 12px -2px #00000036;
+        border-radius: 20px;
+        opacity: 1;
+        padding: 20px;
+    }
+
+    .btn-warning {
+        background: $color-yellow;
+        border: none;
+        border-radius: 15px;
+        padding: 5px 35px;
+
+        &:hover {
+            background: #FFE575;
+            box-shadow: 3px 3px 12px -2px #00000036;
+        }
+
+        &:visited {
+            background: #f5c400;
+        }
+
+        &:active {
+            background: #f5c400 !important;
+            color: #111 !important;
+        }
+    }
+
+    .btn-primary {
+        background: var(--color-azul-f);
+        border: none;
+        color: #fff !important;
+        border-radius: 8px;
+
+        &:hover {
+            background: #1f3b86;
+            box-shadow: 3px 3px 12px -2px #00000036;
+        }
+
+        &:visited {
+            background: #1f3b86;
+        }
+
+        &:active {
+            background: #1f3b86 !important;
+            color: #111 !important;
+        }
+    }
+
+    .c-btn {
+        padding: 0.5rem 1.05rem;
+        border-radius: 1.75rem;
+        line-height: 1rem;
+        width: 120px;
+    }
+
+    .modal-content {
+        border-radius: 1.3rem;
+        overflow: hidden;
+        .modal-header{
+            background: black!important;
+        }
+        .fa-check-circle__check{
+            font-size: 50px;
+            color: #00C100;
+        }
+    }
+
+    .placeholdermail::placeholder {
+        color: rgb(136, 136, 136);
+        text-align: center;
+        padding-top: 30px;
+        font-family: "Font Awesome 5 Free";
+    }
+
+    .warnings {
+        width: 200px;
+        text-align: center;
+        margin: auto;
+        color: var(--color-azul-f);
+        padding-top: 20px;
+        font-weight: bold;
+    }
+
+    .rounded-pill {
+        border-radius: 15px;
+    }
+
+    .form-control:focus {
+        border-color: var(--color-azul) !important;
+        box-shadow: 0 0 2px var(--color-azul) !important;
+    }
+
+    /* Header */
+    header {
+        background-color:white;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        z-index: 0!important;
+        span{
+            margin-left: 10rem;
+            font-size: 22px;
+        }
+       
+    }
+
+
+    /* Wrapper */
+    .wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        /* Navbar */
+        .navbar-static-side {
+            height: 100vh;
+            width: 80px;
+            background: $color-yellow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+
+
+            .nav-aside {
+                margin-top: 90px;
+                list-style: none;
+
+                li {
+                    padding: 24px 0;
+                    /*  padding: 20px;
+
+                    &:hover {
+                        background: #e6e6e6;
+                    } */
+
+                    a {
+                        padding: 24px;
+
+                        &:hover {
+                            background: #FFE575;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .form-container{
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+        &__tile{
+            background: black;
+            color: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+        }
+    }
+
+    /* Dashboard contenido interno */
+    @media screen and(min-width:1380px) {
+        .mt-n3 {
+            margin-top: 3rem;
+        }
+    }
+
+    @media screen and(min-width:780px) {
+        .page-wrapper {
+            width: 93%;
+            margin-left: auto;
+            margin-top: 40px;
+            padding: 50px;
+        }
+    }
+
+    @media screen and(max-width:779px) {
+        .page-wrapper {
+            padding: 80px 10px 20px 100px;
+        }
+    }
+
+
+    .tooltip-inner {
+        background-color: $color-yellow;
+        box-shadow: 3px 3px 12px -2px $color-yellow;
+        color: black;
+    }
+
+    .tooltip.bs-tooltip-right .arrow:before {
+        border-right-color: var(--color-azul-f) !important;
+    }
+
+    .tooltip.bs-tooltip-left .arrow:before {
+        border-left-color: var(--color-azul-f) !important;
+    }
+
+    .tooltip.bs-tooltip-bottom .arrow:before {
+        border-bottom-color: var(--color-azul-f) !important;
+    }
+
+    .tooltip.bs-tooltip-top .arrow:before {
+        border-top-color: var(--color-azul-f) !important;
+    }
+}
