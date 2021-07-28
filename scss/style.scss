@@ -174,11 +174,11 @@ body,
     /* Header */
     header {
         background-color: white;
-        height: 50px;
+        height: 60px;
         width: 100%;
         display: flex;
         align-items: center;
-        z-index: 0 !important;
+        z-index: 2 !important;
 
         span {
             margin-left: 10rem;
@@ -282,6 +282,12 @@ body,
         }
     }
 
+    .c-pcontrol{
+        width: 70px;
+        &::placeholder{
+            text-align: center;
+        }
+    }
     /* Dashboard contenido interno */
     @media screen and(min-width:1380px) {
         .mt-n3 {

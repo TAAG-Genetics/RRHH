@@ -162,7 +162,7 @@ body,
   body header,
   * header {
     background-color: white;
-    height: 50px;
+    height: 60px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -170,7 +170,7 @@ body,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: 0 !important; }
+    z-index: 2 !important; }
     body header span,
     * header span {
       margin-left: 10rem;
@@ -291,6 +291,21 @@ body,
           -ms-flex-align: center;
               align-items: center;
       font-size: 20px; }
+  body .c-pcontrol,
+  * .c-pcontrol {
+    width: 70px; }
+    body .c-pcontrol::-webkit-input-placeholder,
+    * .c-pcontrol::-webkit-input-placeholder {
+      text-align: center; }
+    body .c-pcontrol:-ms-input-placeholder,
+    * .c-pcontrol:-ms-input-placeholder {
+      text-align: center; }
+    body .c-pcontrol::-ms-input-placeholder,
+    * .c-pcontrol::-ms-input-placeholder {
+      text-align: center; }
+    body .c-pcontrol::placeholder,
+    * .c-pcontrol::placeholder {
+      text-align: center; }
   @media screen and (min-width: 1380px) {
     body .mt-n3,
     * .mt-n3 {
