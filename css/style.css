@@ -279,8 +279,6 @@ body,
             body .wrapper .navbar-static-side .nav-aside li a:hover,
             * .wrapper .navbar-static-side .nav-aside li a:hover {
               background: #FFE575; }
-              
-  /*vista panel de control*/
   body .btn-delete,
   * .btn-delete {
     margin: auto;
