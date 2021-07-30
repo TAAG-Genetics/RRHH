@@ -17,7 +17,7 @@
 <body>
 
     <div class="wrapper">
-        <nav class="navbar-default navbar-static-side shadow-sm">
+        <nav class="navbar-default navbar-static-side-admin shadow-sm">
             <ul class="nav-aside">
                 <li><a href="inicio.html" data-toggle="tooltip" data-placement="left" title="Inicio"><img src="../img/hogar.png"
                             width="35" alt=""></a></li>
@@ -29,6 +29,11 @@
                             src="../img/configuraciones.png" width="35" alt=""></a></li>
                 <li><a href="#" data-toggle="tooltip" data-placement="left" title="Nueva persona"><img
                             src="../img/usuarios.png" width="35" alt=""></a></li>
+                            <li>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Autorizaciones">
+                                    <img src="../img/garrapata.svg" width="35" alt="">
+                                </a>
+                            </li>
                 <li><a href="#" data-toggle="tooltip" data-placement="left" title="Salir"><img src="../img/salir.svg"
                             width="35" alt=""></a></li>
             </ul>
@@ -39,19 +44,61 @@
         <div class="container-fluid">
             <header class="fixed-top shadow d-flex flex-row justify-content-between">
                 <span class="font-weight-bold">Bienvenido Cristian González</span>
+                <a href="#"  class="mr-5"type="button" data-toggle="collapse" data-target="#collapseExample"> <img src="../img/boton-de-campana-de-notificaciones.svg" width="35" alt=""></a>
             </header>
-            <h4>Notificaciones</h4>
+            <!--div collapse rechazo-->
+            <div 
+                class="mt-5 col-sm-6 collapse card notificaciones" 
+                id="collapseExample">
+                <table class="table">
+                    <tbody>
+                      <tr>
+                        <th class="border-0">Célula Devops desea autorización de cargos.</th>
+                        <td class="border-0"><a href="../admin/tabla-admin.html" class="btn btn-primary">Ver</a></td>
+                      </tr>
+                      <tr>
+                        <th class="border-0">Célula Desarrollo desea autorización de cambio de persona.</th>
+                        <td class="border-0"><a href="../admin/tabla-admin.html" class="btn btn-primary">Ver</a></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--fin div collapse rechazo-->
+            
+            <p>total Células: <strong>2</strong></p>
             <div class="row pt-5">
-                <div class="card col-lg-6">
+                <div class="table-responsive b-radius shadow-sm">
                     <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Célula</th>
+                            <th scope="col">Lider</th>
+                            <th scope="col">N°. Cargos</th>
+                            <th scope="col">Creación</th>
+                            <th scope="col">Inicia célula</th>
+                            <th scope="col">Contacto con cliente</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
                         <tbody>
                           <tr>
-                            <th class="border-0">Célula Devops desea autorización de cargos.</th>
-                            <td class="border-0"><a href="../admin/tabla-admin.html" class="btn btn-primary">Ver</a></td>
+                            <td scope="row">Dirección</td>
+                            <td>Denis Berndt</td>
+                            <td>2</td>
+                            <td>01/07/2003</td>
+                            <td>Sí</td>
+                            <td>Sí</td>
+                            <td><a href="../admin/celula.html" class="btn btn-primary">Ver</a></td>
                           </tr>
                           <tr>
-                            <th class="border-0">Célula Desarrollo desea autorización de cambio de persona.</th>
-                            <td class="border-0"><a href="../admin/tabla-admin.html" class="btn btn-primary">Ver</a></td>
+                            <td scope="row"  >DevOps</td>
+                            <td>Josué Soria</td>
+                            <td>3</td>
+                            <td>01/07/2003</td>
+                            <td>si</td>
+                            <td>No</td>
+                            <td><a href="../admin/auto-admin.html" class="btn btn-primary">Ver</a></td>
                           </tr>
                         </tbody>
                       </table>
