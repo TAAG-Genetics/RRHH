@@ -68,7 +68,7 @@ body,
     .btn-warning {
         background: $color-yellow;
         border: none;
-        border-radius: 15px;
+        border-radius: 15px !important;
         padding: 5px 35px;
 
         &:hover {
@@ -86,9 +86,9 @@ body,
         }
     }
       .btn-primary {
-        background: $color-blue!important;
+        background: $color-blue !important;
         border: none;
-        border-radius: 15px;
+        border-radius: 15px !important;
         padding: 5px 35px;
 
         &:hover {
@@ -245,11 +245,47 @@ body,
 
 
             .nav-aside {
-                margin-top: 90px;
+                margin-top: 50px;
                 list-style: none;
 
                 li {
                     padding: 24px 0;
+                    /*  padding: 20px;
+
+                    &:hover {
+                        background: #e6e6e6;
+                    } */
+
+                    a {
+                        padding: 24px;
+
+                        &:hover {
+                            background: #FFE575;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Navbar admin */
+        .navbar-static-side-admin {
+            height: 100vh;
+            width: 80px;
+            background: $color-yellow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+
+
+            .nav-aside {
+                margin-top: 50px;
+                list-style: none;
+
+                li {
+                    padding: 20px 0;
                     /*  padding: 20px;
 
                     &:hover {
@@ -308,6 +344,13 @@ body,
     .table .table-striped th td{
         border: none !important;
     }
+    .notificaciones{
+        background-color:white !important;
+        left: 43% !important;
+        top: -5% !important;
+        position: absolute !important; 
+        z-index: 1000 !important;
+      }
 
 
     .form-container {
