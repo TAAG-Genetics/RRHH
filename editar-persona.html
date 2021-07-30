@@ -11,7 +11,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Nueva Persona</title>
+    <title>Editar Persona</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                             src="img/hogar.png" width="35" alt=""></a></li>
                 <li><a href="celula-inicial.html" data-toggle="tooltip" data-placement="left"
                         title="Iniciar Célula"><img src="img/conversacion.png" width="35" alt=""></a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="left" title="Control de Células"><img
+                <li><a href="panel-control-celulas.html" data-toggle="tooltip" data-placement="left" title="Control de Células"><img
                             src="img/avatar.png" width="35" alt=""></a></li>
                 <li><a href="panel-control.html" data-toggle="tooltip" data-placement="left" title="Configuraciones"><img
                             src="img/configuraciones.png" width="35" alt=""></a></li>
@@ -38,9 +38,9 @@
     <main class="page-wrapper">
         <div class="container-fluid">
             <header class="fixed-top shadow d-flex justify-content-between">
-                <span class="font-weight-bold">Nueva persona</span>
+                <span class="font-weight-bold">Edición de: Josué Soria</span>
                 <button class="btn btn-warning mr-sm-5 mr-3 " type="button" data-toggle="modal"
-                    data-target="#ingresoPersonas">Ingresar</button></header>
+                    data-target="#ingresoPersonas">Actualizar</button></header>
 
 
             <!-- Creación de Row de Formulario -->
@@ -100,8 +100,14 @@
                                 <div class="col-md-12 mt-3 mt-lg-2">
                                     <div class="c-dropzone d-flex flex-column justify-content-center align-items-center">
                                         <div class="c-dropzone__content d-flex flex-column justify-content-center">
-                                            <p class="text-center">Arrastra aquí los documentos personales</p>
-                                        <img src="img/upload.svg" height="50" alt="">
+                                            <p class="text-center">Arrastra aquí los documentos personales a actualizar</p>
+                                            <div class="d-flex flex-sm-row flex-column justify-content-center">
+                                                <img class="p-1" src="img/icono-pdf.svg" height="50" alt="">
+                                                <img class="p-1" src="img/icono-doc.svg" height="50" alt="">
+                                                <img class="p-1" src="img/icono-ppt.svg" height="50" alt="">
+                                                <img class="p-1" src="img/icono-jpg.svg" height="50" alt="">
+                                                <img class="p-1" src="img/icono-png.svg" height="50" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -154,7 +160,7 @@
           </button> -->
                 </div>
                 <div class="modal-body">
-                    <p class="text-center px-sm-5">La persona ha sido agregada correctamente.</p>
+                    <p class="text-center px-sm-5">Los cambios se han guardado correctamente</p>
                     <div class="row justify-content-center">
                         <button class="btn btn-warning mb-2" type="button" data-dismiss="modal">Ok </button>
                     </div>
