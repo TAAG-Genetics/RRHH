@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>User panel RRHH</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav class="navbar-default navbar-static-side shadow-sm">
+            <ul class="nav-aside">
+                <li>
+                    <a href="inicio.html" data-toggle="tooltip" data-placement="left" title="Inicio">
+                        <img src="../img/hogar.png"width="35" alt="">
+                    </a>
+                </li>
+                <li class="fixed-bottom">
+                    <a href="#" data-toggle="tooltip" data-placement="left" title="Salir">
+                        <img src="../img/salir.svg" width="35" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="page-wrapper">
+        <div class="container-fluid">
+            <header class="fixed-top shadow d-flex flex-row justify-content-between">
+                <span class="font-weight-bold">Bienvenida Josefina</span>
+            </header>
+            <h4>Información laboral</h4>
+            <div class="row pt-4">
+                <div class="col-lg-12">    
+                        <form class="form-container__form p-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="nombre">Nombre de cargo:</label>
+                                    <input type="text" nombre class=" w-7 form-control rounded-pill">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="nombre">Mision del cargo</label>
+                                    <textarea class="form-control rounded-pill" required name="mision"
+                                        rows="2"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-12 mt-5 mt-md-0">
+                                    <label>Documentación de cargo</label>
+                                    <div class="row justify-content-start mt-3 ml-2">
+                                        <a class="mr-5" href="#" data-toggle="modal" data-target="#correcto">
+                                            <img id="img-icon" class="mr-3" src="../img/icono-pdf.svg" width="50" height="50">
+                                        </a>
+                                        <a href="#" data-toggle="modal" data-target="#desc-cargo">
+                                            <img id="img-icon" src="../img/icono-pdf.svg" width="50" height="50">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-0">
+                                <div class="col-md-12 mt-md-0">
+                                    <label>Personas en mi Célula</label>
+                                    <div class="mb-3 col-sm-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Josué Soria</h5>
+                                                <p class="card-text ">Cargo: P.O <br> Misión: Dirigir operación tecnológica. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+
+<!-- Tootltips -->
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+</body>
+
+</html>

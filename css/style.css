@@ -25,6 +25,7 @@ body,
   /* Wrapper */
   /*vista panel de control*/
   /*FIN vista panel de control*/
+  /*tabla admin*/
   /* Dashboard contenido interno */ }
   body main,
   * main {
@@ -324,11 +325,15 @@ body,
   * #img-icon {
     overflow: hidden;
     -webkit-transition: .5s;
-    transition: .5s; }
+    transition: .5s;
+    cursor: pointer; }
     body #img-icon:hover,
     * #img-icon:hover {
       -webkit-transform: scale(1.3);
       transform: scale(1.3); }
+  body .table .table-striped th td,
+  * .table .table-striped th td {
+    border: none !important; }
   body .form-container,
   * .form-container {
     width: 100%;
