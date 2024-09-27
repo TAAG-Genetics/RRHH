@@ -21,11 +21,17 @@ body,
   /* Login */
   /* Termina Login */
   /* Wrapper */
+  /*vista panel de control*/
+  /*FIN vista panel de control*/
+  /*tabla admin*/
   /* Dashboard contenido interno */ }
   body main,
   * main {
     display: block;
     overflow: hidden; }
+  body .mt-10,
+  * .mt-10 {
+    margin-top: 10px; }
   body .color-azul-f,
   * .color-azul-f {
     color: var(--color-azul-f); }
@@ -52,7 +58,7 @@ body,
   * .btn-warning {
     background: #FDCF11;
     border: none;
-    border-radius: 15px;
+    border-radius: 15px !important;
     padding: 5px 35px; }
     body .btn-warning:hover,
     * .btn-warning:hover {
@@ -70,7 +76,7 @@ body,
   * .btn-primary {
     background: #310CF3 !important;
     border: none;
-    border-radius: 15px;
+    border-radius: 15px !important;
     padding: 5px 35px; }
     body .btn-primary:hover,
     * .btn-primary:hover {
@@ -237,7 +243,8 @@ body,
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    /* Navbar */ }
+    /* Navbar */
+    /* Navbar admin */ }
     body .wrapper .navbar-static-side,
     * .wrapper .navbar-static-side {
       height: 100vh;
@@ -258,7 +265,7 @@ body,
       z-index: 100; }
       body .wrapper .navbar-static-side .nav-aside,
       * .wrapper .navbar-static-side .nav-aside {
-        margin-top: 90px;
+        margin-top: 50px;
         list-style: none; }
         body .wrapper .navbar-static-side .nav-aside li,
         * .wrapper .navbar-static-side .nav-aside li {
@@ -274,6 +281,85 @@ body,
             body .wrapper .navbar-static-side .nav-aside li a:hover,
             * .wrapper .navbar-static-side .nav-aside li a:hover {
               background: #FFE575; }
+    body .wrapper .navbar-static-side-admin,
+    * .wrapper .navbar-static-side-admin {
+      height: 100vh;
+      width: 80px;
+      background: #FDCF11;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: fixed;
+      top: 0;
+      z-index: 100; }
+      body .wrapper .navbar-static-side-admin .nav-aside,
+      * .wrapper .navbar-static-side-admin .nav-aside {
+        margin-top: 50px;
+        list-style: none; }
+        body .wrapper .navbar-static-side-admin .nav-aside li,
+        * .wrapper .navbar-static-side-admin .nav-aside li {
+          padding: 20px 0;
+                    /*  padding: 20px;
+
+                    &:hover {
+                        background: #e6e6e6;
+                    } */ }
+          body .wrapper .navbar-static-side-admin .nav-aside li a,
+          * .wrapper .navbar-static-side-admin .nav-aside li a {
+            padding: 24px; }
+            body .wrapper .navbar-static-side-admin .nav-aside li a:hover,
+            * .wrapper .navbar-static-side-admin .nav-aside li a:hover {
+              background: #FFE575; }
+  body .btn-delete,
+  * .btn-delete {
+    margin: auto;
+    background: black;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer; }
+  body .btn-cancel,
+  * .btn-cancel {
+    margin-left: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 35px; }
+    body .btn-cancel:hover,
+    * .btn-cancel:hover {
+      background: #232323;
+      -webkit-box-shadow: 3px 3px 12px -2px #00000036;
+              box-shadow: 3px 3px 12px -2px #00000036; }
+  body #img-icon,
+  * #img-icon {
+    overflow: hidden;
+    -webkit-transition: .5s;
+    transition: .5s;
+    cursor: pointer; }
+    body #img-icon:hover,
+    * #img-icon:hover {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3); }
+  body .w-7,
+  * .w-7 {
+    width: 70%; }
+  body .table .table-striped th td,
+  * .table .table-striped th td {
+    border: none !important; }
+  body .notificaciones,
+  * .notificaciones {
+    background-color: white !important;
+    left: 43% !important;
+    top: -5% !important;
+    position: absolute !important;
+    z-index: 1000 !important; }
   body .form-container,
   * .form-container {
     width: 100%;
